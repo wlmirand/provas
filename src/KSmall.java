@@ -1,9 +1,3 @@
-import sun.reflect.generics.tree.Tree;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class KSmall {
 
     static class TreeNode {

@@ -1,7 +1,21 @@
 public class Main {
 
     public static void main(String[] args) {
-        testeKSmall();
+        //testeKSmall();
+        testeBuySellStock();
+    }
+
+    private static void testeBuySellStock() {
+        BuySellStock bss = new BuySellStock();
+
+        //int[] vetor = {7,1,5,3,6,4};
+        //int[] vetor = {7,1,5,3,16,4};
+        int[] vetor = {1,1,2,3,4,5};
+        //int[] vetor = {1,2,3,4,5};
+        //int[] vetor = {7,6,4,3,1};
+
+        int profit = bss.maxProfit(vetor);
+        System.out.println(profit);
     }
 
     private static void testeKSmall() {
