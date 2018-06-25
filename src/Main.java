@@ -2,7 +2,32 @@ public class Main {
 
     public static void main(String[] args) {
         //testeKSmall();
-        testeBuySellStock();
+        //testeBuySellStock();
+        testeArrayManipulation();
+    }
+
+    private static void testeArrayManipulation() {
+        ArrayManipulation am = new ArrayManipulation();
+
+        /*
+        int numElem = 5;
+        int[][] ops = {
+                {1,2,100},
+                {2,5,100},
+                {3,4,100}
+        };
+        */
+
+
+        int numElem = 10;
+        int[][] ops = {
+                {1,5,3},
+                {4,8,7},
+                {6,9,1}
+        };
+
+        long res = am.arrayManipulationOk(numElem, ops);
+        System.out.println(res);
     }
 
     private static void testeBuySellStock() {
