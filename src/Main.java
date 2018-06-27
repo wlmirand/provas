@@ -1,9 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        //testeKSmall();
+        testeKSmall();
         //testeBuySellStock();
-        testeArrayManipulation();
+        //testeArrayManipulation();
     }
 
     private static void testeArrayManipulation() {
@@ -64,7 +64,7 @@ public class Main {
 
         KSmall ksm = new KSmall();
 
-        int res = ksm.kthSmallest(root, 3);
+        int res = ksm.kthSmallest2(root, 4);
         System.out.println(res);
     }
 }
