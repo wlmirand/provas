@@ -15,8 +15,8 @@ public class ArrayManipulation {
      *
      * Add the values of 'k' between the indices 'a' and 'b' inclusive:
      * Note the indices are between 1 and N
-     * start  -> [0,0,0,0,0,0,0,0,0,0]
-     * 1st op -> [3,3,3,3,3,0,0,0,0,0]
+     * start  -> [0,0,0, 0, 0,0,0,0,0,0]
+     * 1st op -> [3,3,3, 3, 3,0,0,0,0,0]
      * 2nd op -> [3,3,3,10,10,7,7,7,0,0]
      * 3rd op -> [3,3,3,10,10,8,8,8,1,0]
      *

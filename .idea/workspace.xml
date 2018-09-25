@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="095ede94-fedf-48e4-bd46-f94c421283e4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Drone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Strings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prova/ArrayManipulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prova/ArrayManipulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prova/KSmall$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prova/KSmall$TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prova/KSmall.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prova/KSmall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prova/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prova/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ArrayManipulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayManipulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KSmall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KSmall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +29,8 @@
       <file leaf-file-name="ArrayManipulation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ArrayManipulation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="190">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -590,8 +581,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayManipulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="190">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>
