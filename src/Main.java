@@ -1,9 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
+
+        /*
+        int maxWeight = 100;
+        int maxPackages = 3;
+        List<Integer> weights = new ArrayList<>();
+        weights.add(10);
+        weights.add(20);
+        weights.add(30);
+        weights.add(20);
+        weights.add(30);
+
+        System.out.println(Drone.smallestNumberOfTrips(maxWeight, maxPackages, weights));
+        */
+
         testeKSmall();
-        //testeBuySellStock();
-        //testeArrayManipulation();
     }
 
     private static void testeArrayManipulation() {
@@ -26,7 +41,7 @@ public class Main {
                 {6,9,1}
         };
 
-        long res = am.arrayManipulationOk(numElem, ops);
+        long res = am.arrayManipulationTeste(numElem, ops);
         System.out.println(res);
     }
 
@@ -42,6 +57,16 @@ public class Main {
         int profit = bss.maxProfit(vetor);
         System.out.println(profit);
     }
+
+/*
+      5
+     / \
+    3   6
+   / \
+  2   4
+ /
+1
+ */
 
     private static void testeKSmall() {
         KSmall.TreeNode root = new KSmall.TreeNode();
@@ -64,7 +89,9 @@ public class Main {
 
         KSmall ksm = new KSmall();
 
-        int res = ksm.kthSmallest2(root, 4);
-        System.out.println(res);
+        int res1 = ksm.kthSmallest(root, 4);
+        int res2 = ksm.kthSmallestTeste(root, 4);
+        System.out.println(res1);
+        System.out.println(res2);
     }
 }

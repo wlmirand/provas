@@ -1,15 +1,24 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Stack;
 
 public class KSmall {
 
+    /**
+     * Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+     */
+
+    /**
+     * Tree Node structure
+     */
     static class TreeNode {
-        public int val;
+        public int value;
         public TreeNode left;
         public TreeNode right;
 
         @Override
         public String toString() {
-            return String.valueOf(val);
+            return String.valueOf(value);
         }
     }
 
@@ -17,6 +26,9 @@ public class KSmall {
     int k;
     int res;
 
+    /**
+     * Implementacao Recursiva
+     */
     public int kthSmallest(TreeNode root, int k) {
 
         this.k = k;
@@ -34,13 +46,15 @@ public class KSmall {
 
         count++;
         if (k == count) {
-            res = node.val;
+            res = node.value;
         }
 
         inorder(node.right);
     }
 
-
+    /**
+     * Implementacao iterativa
+     */
     public int kthSmallest2(TreeNode root, int k) {
 
         int count = 0;
@@ -53,8 +67,7 @@ public class KSmall {
             if (stack.peek().left != null) {
                 stack.push(topoAtual.left);
                 topoAtual.left = null;
-
-            } else  if (stack.peek().right != null) {
+            } else if (stack.peek().right != null) {
                 count++;
                 stack.pop();
                 stack.push(topoAtual.right);
@@ -65,10 +78,38 @@ public class KSmall {
             }
 
             if (count == k) {
-                return topoAtual.val;
+                return topoAtual.value;
             }
         }
 
         return 0;
+    }
+
+    int cont = 0;
+    int myK = 0;
+    int myVal = -1;
+
+    public int kthSmallestTeste(TreeNode root, int k) {
+        //val.add(root.val);
+        myK = k;
+        addValue(root);
+
+        return myVal;
+    }
+
+    public void addValue(TreeNode obj){
+        if (obj.left != null) {
+            addValue(obj.left);
+        }
+
+        cont++;
+        if (cont == myK) {
+            myVal = obj.value;
+            return;
+        }
+
+        if (obj.right != null) {
+            addValue(obj.right);
+        }
     }
 }
